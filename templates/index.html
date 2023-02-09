@@ -219,7 +219,20 @@
             <button class="contact-btn">Send</button>
         </div>
     </section>
-
+    <section id="contact-section">
+        <h1 class="heading">Contact</h1>
+        <form action="https://formsubmit.co/mohitsainidna@gmail.com" method="POST">
+        <div class="form">
+            <input type="text" name="name" placeholder="name">
+            <input type="email" name="email" placeholder="email">
+            <input type="text" name="subject" placeholder="subject">
+            <textarea name="msg" placeholder="message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://thankyou-page.onrender.com">
+            <button type="submit" class="contact-btn">Send</button>
+        </div>
+        </form>
+    </section>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
