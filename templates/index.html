@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <!-- navbar -->
@@ -37,7 +37,8 @@
 
         <div class="header-img-container">
             <div class="circle"></div>
-            <img src="img/header-img.png" class="header-img" alt="">
+            <img src="{{ url_for('static', filename='img/header-img.png') }}" class="header-img" alt="">
+            
         </div>
     </header>
 
@@ -48,13 +49,13 @@
         <div class="about-container">
             <div class="image-container">
                 <div class="square"></div>
-                <img src="img/about.png" class="about-img" alt="">
+                <img src="{{ url_for('static', filename='img/about.png') }}" class="about-img" alt="">
                 <div class="social-links">
-                    <a href="https://github.com/MohitSaini90" target="_blank"><img src="img/github.png" class="social-img" alt=""></a>
-                    <a href="https://www.instagram.com/mitzz07/" target="_blank"><img src="img/insta.png" class="social-img" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=100090279665989" target="_blank"><img src="img/fb.png" class="social-img" alt=""></a>
-                    <a href="https://twitter.com/Mohitsa42024567" target="_blank"><img src="img/twitter.png" class="social-img" alt=""></a>
-                    <a href="https://www.linkedin.com/in/mohit-saini-9112a9213/" target="_blank"><img src="img/linked.png" class="social-img" alt=""></a>
+                    <a href="https://github.com/MohitSaini90" target="_blank"><img src="{{ url_for('static', filename='img/github.png') }}" class="social-img" alt=""></a>
+                    <a href="https://www.instagram.com/mitzz07/" target="_blank"><img src="{{ url_for('static', filename='img/insta.png') }}" class="social-img" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090279665989" target="_blank"><img src="{{ url_for('static', filename='img/fb.png') }}" class="social-img" alt=""></a>
+                    <a href="https://twitter.com/Mohitsa42024567" target="_blank"><img src="{{ url_for('static', filename='img/twitter.png') }}" class="social-img" alt=""></a>
+                    <a href="https://www.linkedin.com/in/mohit-saini-9112a9213/" target="_blank"><img src="{{ url_for('static', filename='img/linked.png') }}" class="social-img" alt=""></a>
                 </div>
             </div>
 
@@ -131,7 +132,7 @@
 
 
             <div class="project-card">
-                <img src="img/project-1.png" class="project-img" alt="">
+                <img src="{{ url_for('static', filename='img/project-1.png') }}" class="project-img" alt="">
                 <div class="project-content">
                     <h1 class="project-title">Project 01</h1>
                     <p class="project-info">
@@ -150,7 +151,7 @@
 
 
             <div class="project-card">
-                <img src="img/project-2.png" class="project-img" alt="">
+                <img src="{{ url_for('static', filename='img/project-2.png') }}" class="project-img" alt="">
                 <div class="project-content">
                     <h1 class="project-title">Project 02</h1>
                     <p class="project-info">
@@ -169,7 +170,7 @@
             </div>
 
             <div class="project-card">
-                <img src="img/project-3.png" class="project-img" alt="">
+                <img src="{{ url_for('static', filename='img/project-3.png') }}" class="project-img" alt="">
                 <div class="project-content">
                     <h1 class="project-title">Project 03</h1>
                     <p class="project-info">
@@ -187,7 +188,7 @@
             </div>
 
             <div class="project-card">
-                <img src="img/project-4.png" class="project-img" alt="">
+                <img src="{{ url_for('static', filename='img/project-4.png') }}" class="project-img" alt="">
                 <div class="project-content">
                     <h1 class="project-title">Project 04</h1>
                     <p class="project-info">
@@ -219,8 +220,7 @@
         </div>
     </section>
 
-
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
 
